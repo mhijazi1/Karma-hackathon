@@ -34,7 +34,7 @@ public class AddVehicleController implements Initializable {
         Parent root;
 
         stage=(Stage) frontbtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("text.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/fxml/text.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
