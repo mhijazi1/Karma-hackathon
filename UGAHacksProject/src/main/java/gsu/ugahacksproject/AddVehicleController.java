@@ -46,12 +46,36 @@ public class AddVehicleController implements Initializable {
     private void OpenUpload(ActionEvent event) throws IOException {
         Stage stage; 
         Parent root;
+        if(event.getSource()== frontbtn){
+        stage = new Stage();
+        root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
+        stage.setScene(new Scene(root));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(frontbtn.getScene().getWindow());
+        stage.showAndWait();
+        }
         if(event.getSource()== backbtn){
         stage = new Stage();
         root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
         stage.setScene(new Scene(root));
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.initOwner(backbtn.getScene().getWindow());
+        stage.showAndWait();
+        }
+        if(event.getSource()== driverbtn){
+        stage = new Stage();
+        root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
+        stage.setScene(new Scene(root));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(driverbtn.getScene().getWindow());
+        stage.showAndWait();
+        }
+        if(event.getSource()== passengerbtn){
+        stage = new Stage();
+        root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
+        stage.setScene(new Scene(root));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(passengerbtn.getScene().getWindow());
         stage.showAndWait();
         }
         else{

@@ -65,5 +65,11 @@
             <Font size="22.0" />
          </font>
       </Button>
+      <Label layoutX="102.0" layoutY="373.0" prefHeight="17.0" prefWidth="80.0" text="Region">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="205.0" layoutY="371.0" />
    </children>
 </AnchorPane>
