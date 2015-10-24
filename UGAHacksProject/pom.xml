@@ -18,8 +18,15 @@
         <!-- Used as the 'Vendor' for JNLP generation -->
         <name>Your Organisation</name>
     </organization>
-
+    <dependencies>
+    <dependency>
+          <groupId>com.clarifai</groupId>
+          <artifactId>clarifai-api-java</artifactId>
+          <version>1.1.0</version>
+      </dependency>
+  </dependencies>
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
