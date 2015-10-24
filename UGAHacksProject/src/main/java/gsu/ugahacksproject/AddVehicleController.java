@@ -5,6 +5,11 @@
  */
 package gsu.ugahacksproject;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,6 +20,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -26,6 +34,11 @@ public class AddVehicleController implements Initializable {
 
     @FXML
     private Button frontbtn;
+    @FXML
+    private Hyperlink fronthyper;
+    @FXML
+    private Object primaryStage;
+    private Object imageView;
     
     @FXML
     private void OpenUpload(ActionEvent event) throws IOException {
@@ -40,10 +53,11 @@ public class AddVehicleController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
-
     }   
+
     
 }
