@@ -45,7 +45,7 @@
       <TextField layoutX="205.0" layoutY="297.0" prefHeight="25.0" prefWidth="256.0" />
       <TextField layoutX="204.0" layoutY="390.0" prefHeight="25.0" prefWidth="195.0" />
       <TextField layoutX="204.0" layoutY="431.0" prefHeight="25.0" prefWidth="195.0" />
-      <Button layoutX="199.0" layoutY="488.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="205.0" style="-fx-background-color: rgba(48, 132, 217); -fx-text-fill: white;" text="Register!">
+      <Button fx:id="submitbtn" layoutX="199.0" layoutY="488.0" mnemonicParsing="false" onAction="#ToLogIn" prefHeight="48.0" prefWidth="205.0" style="-fx-background-color: rgba(48, 132, 217); -fx-text-fill: white;" text="Register!">
          <font>
             <Font size="22.0" />
          </font>
@@ -72,5 +72,6 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <Hyperlink fx:id="backhyper" layoutX="274.0" layoutY="552.0" onAction="#CancelRegistration" style="-fx-text-fill: white;" text="Cancel" />
    </children>
 </AnchorPane>

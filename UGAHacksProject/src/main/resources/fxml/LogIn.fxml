@@ -7,30 +7,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="536.0" style="-fx-background-color: rgba(33, 33, 33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsu.ugahacksproject.LogInController">
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="415.0" style="-fx-background-color: rgba(33, 33, 33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsu.ugahacksproject.LogInController">
    <children>
-      <Label layoutX="236.0" layoutY="73.0" prefHeight="57.0" prefWidth="109.0" style="-fx-text-fill: white;" text="Sign In">
+      <Label layoutX="159.0" layoutY="114.0" prefHeight="57.0" prefWidth="109.0" style="-fx-text-fill: white;" text="Sign In">
          <font>
             <Font size="34.0" />
          </font>
       </Label>
-      <TextField layoutX="195.0" layoutY="177.0" prefHeight="25.0" prefWidth="190.0" />
-      <TextField layoutX="196.0" layoutY="226.0" prefHeight="25.0" prefWidth="190.0" />
-      <Label layoutX="115.0" layoutY="179.0" prefHeight="21.0" prefWidth="68.0" style="-fx-text-fill: white;" text="Username">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="118.0" layoutY="229.0" prefHeight="20.0" prefWidth="61.0" style="-fx-text-fill: white;" text="Password">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Button layoutX="195.0" layoutY="271.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: rgba(48, 132, 217);" text="Sign In">
+      <TextField layoutX="96.0" layoutY="204.0" prefHeight="25.0" prefWidth="236.0" promptText="Username" />
+      <Button fx:id="submitbtn" layoutX="96.0" layoutY="282.0" mnemonicParsing="false" onAction="#ToHome" prefHeight="30.0" prefWidth="236.0" style="-fx-background-color: rgba(48, 132, 217); -fx-text-fill: white;" text="Sign In">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Hyperlink layoutX="195.0" layoutY="319.0" style="-fx-text-fill: white;" text="Register" />
+      <Hyperlink fx:id="reglink" layoutX="94.0" layoutY="335.0" onAction="#ToRegistration" style="-fx-text-fill: white;" text="Register" />
+      <PasswordField layoutX="96.0" layoutY="239.0" prefHeight="25.0" prefWidth="236.0" promptText="Password" />
    </children>
 </AnchorPane>

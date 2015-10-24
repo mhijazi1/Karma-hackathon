@@ -13,14 +13,20 @@
          <top>
             <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
               <items>
-                  <Label text="Carma">
+                  <Label text="Karma">
                      <font>
                         <Font size="29.0" />
                      </font>
                   </Label>
-                  <Region prefHeight="43.0" prefWidth="607.0" />
-                  <Label prefHeight="17.0" prefWidth="84.0" text="Account Name" />
-                  <Hyperlink text="Log Out" />
+                  <Region prefHeight="43.0" prefWidth="582.0" />
+                  <Label prefHeight="20.0" prefWidth="99.0" text="Account Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Hyperlink fx:id="logoutlink" onAction="#LogOut" text="Log Out">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Hyperlink>
               </items>
             </ToolBar>
          </top>
@@ -39,7 +45,7 @@
          <center>
             <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
               <items>
-                  <Hyperlink text="Sell Your Car" />
+                  <Hyperlink fx:id="avlink" onAction="#ToAddVehicle" text="Sell Your Car" />
                   <Region prefHeight="25.0" prefWidth="544.0" />
                   <TextField prefHeight="25.0" prefWidth="156.0" />
                 <Button mnemonicParsing="false" text="Search" />
