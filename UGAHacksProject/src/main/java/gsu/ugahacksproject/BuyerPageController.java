@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author Iwasaki
  */
-public class TextController implements Initializable {
+public class BuyerPageController implements Initializable {
 
     /**
      * Initializes the controller class.
