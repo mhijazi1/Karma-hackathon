@@ -9,8 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="878.0" prefWidth="717.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gsu.ugahacksproject.DisputeController">
+<AnchorPane id="AnchorPane" prefHeight="878.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsu.ugahacksproject.DisputeController">
    <children>
       <BorderPane prefHeight="878.0" prefWidth="717.0">
          <top>
@@ -29,12 +28,12 @@
                   <ImageView fitHeight="134.0" fitWidth="186.0" layoutX="34.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true" />
                   <Label layoutX="254.0" layoutY="42.0" text="Verification Page">
                      <font>
                         <Font size="28.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true" />
                   <CheckBox layoutX="248.0" layoutY="171.0" mnemonicParsing="false" text="Dented" />
                   <CheckBox layoutX="248.0" layoutY="195.0" mnemonicParsing="false" text="Good Condition" />
                   <CheckBox layoutX="254.0" layoutY="730.0" mnemonicParsing="false" text="Good Condition" />
