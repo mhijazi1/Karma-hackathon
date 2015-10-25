@@ -74,7 +74,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        fronttext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
         }
@@ -84,7 +84,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        fronttext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
         }
@@ -94,7 +94,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-       fronttext.setText(chooser.getSelectedFile().getPath());
+       fronttext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
         }
@@ -104,7 +104,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        fronttext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
 }
