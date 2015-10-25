@@ -1,3 +1,6 @@
 .button {
     -fx-font-weight: bold;
 }
+.hyperlink:hover {
+    -fx-graphic: url("engine.jpg");
+}

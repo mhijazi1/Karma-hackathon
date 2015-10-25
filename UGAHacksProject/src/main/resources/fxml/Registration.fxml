@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="603.0" style="-fx-background-color: rgba(33, 33, 33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsu.ugahacksproject.RegistrationController">
+   <children>
+      <Label layoutX="129.0" layoutY="86.0" prefHeight="63.0" prefWidth="334.0" style="-fx-text-fill: white;" text="Vehicle Registration">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="194.0" prefHeight="20.0" prefWidth="80.0" style="-fx-text-fill: white;" text="First Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="263.0" prefHeight="17.0" prefWidth="80.0" style="-fx-text-fill: white;" text="Address 1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="227.0" prefHeight="20.0" prefWidth="80.0" style="-fx-text-fill: white;" text="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="303.0" prefHeight="17.0" prefWidth="80.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="340.0" prefHeight="20.0" prefWidth="40.0" style="-fx-text-fill: white;" text="State">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="205.0" layoutY="191.0" prefHeight="25.0" prefWidth="256.0" />
+      <TextField layoutX="205.0" layoutY="224.0" prefHeight="25.0" prefWidth="256.0" />
+      <TextField layoutX="205.0" layoutY="260.0" prefHeight="25.0" prefWidth="256.0" />
+      <TextField layoutX="205.0" layoutY="297.0" prefHeight="25.0" prefWidth="256.0" />
+      <TextField layoutX="204.0" layoutY="390.0" prefHeight="25.0" prefWidth="195.0" />
+      <TextField layoutX="204.0" layoutY="431.0" prefHeight="25.0" prefWidth="195.0" />
+      <Button fx:id="submitbtn" layoutX="199.0" layoutY="488.0" mnemonicParsing="false" onAction="#ToLogIn" prefHeight="48.0" prefWidth="205.0" style="-fx-background-color: rgba(48, 132, 217); -fx-text-fill: white;" text="Register!">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="108.0" layoutY="300.0" prefHeight="17.0" prefWidth="80.0" style="-fx-text-fill: white;" text="Address 2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="337.0" prefHeight="20.0" prefWidth="58.0" style="-fx-text-fill: white;" text="Zip Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="364.0" layoutY="337.0" prefHeight="25.0" prefWidth="97.0" />
+      <ComboBox layoutX="205.0" layoutY="334.0" prefHeight="25.0" prefWidth="68.0" />
+      <Label layoutX="131.0" layoutY="393.0" prefHeight="20.0" prefWidth="34.0" style="-fx-text-fill: white;" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="434.0" prefHeight="20.0" prefWidth="97.0" style="-fx-text-fill: white;" text="Phone Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="backhyper" layoutX="274.0" layoutY="552.0" onAction="#CancelRegistration" style="-fx-text-fill: white;" text="Cancel" />
+   </children>
+</AnchorPane>
