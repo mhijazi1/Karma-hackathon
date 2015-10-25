@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="296.0" prefWidth="361.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gsu.ugahacksproject.AddVehicleController">
+<AnchorPane id="AnchorPane" prefHeight="296.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsu.ugahacksproject.AddVehicleController">
    <children>
       <Text layoutX="138.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="URL or File" textAlignment="CENTER">
          <font>
@@ -16,6 +15,7 @@
          </font>
       </Text>
       <TextField layoutX="97.0" layoutY="130.0" />
-      <Button fx:id="uploadbtn" layoutX="253.0" layoutY="130.0" mnemonicParsing="false" onAction="#OpenUpload" text="Import" />
+      <Button fx:id="importbtn" layoutX="257.0" layoutY="130.0" mnemonicParsing="false" onAction="#GetFile" text="Import" />
+      <Button fx:id="uploadbtn" layoutX="97.0" layoutY="169.0" mnemonicParsing="false" onAction="#OpenUpload" prefHeight="25.0" prefWidth="149.0" text="Upload" />
    </children>
 </AnchorPane>
