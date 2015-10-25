@@ -20,7 +20,7 @@
       <TextField fx:id="drivertext" layoutX="126.0" layoutY="451.0" prefHeight="25.0" prefWidth="216.0" promptText="Driver Side" />
       <TextField fx:id="passtext" layoutX="127.0" layoutY="499.0" prefHeight="25.0" prefWidth="216.0" promptText="Passenger Side" />
       <Button fx:id="driverbtn" layoutX="358.0" layoutY="451.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
-      <Button fx:id="rearbtn" layoutX="358.0" layoutY="403.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
+      <Button fx:id="backbtn" layoutX="358.0" layoutY="403.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
       <Button fx:id="passengerbtn" layoutX="358.0" layoutY="499.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
       <Hyperlink layoutX="289.0" layoutY="380.0" text="Example" />
       <Hyperlink layoutX="289.0" layoutY="428.0" text="Example" />
