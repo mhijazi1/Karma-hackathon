@@ -34,15 +34,15 @@
                         <Font size="28.0" />
                      </font>
                   </Label>
-                  <CheckBox layoutX="248.0" layoutY="171.0" mnemonicParsing="false" text="Dented" />
-                  <CheckBox layoutX="248.0" layoutY="195.0" mnemonicParsing="false" text="Good Condition" />
-                  <CheckBox layoutX="254.0" layoutY="730.0" mnemonicParsing="false" text="Good Condition" />
-                  <CheckBox layoutX="254.0" layoutY="699.0" mnemonicParsing="false" text="Dented" />
-                  <CheckBox layoutX="254.0" layoutY="557.0" mnemonicParsing="false" text="Good Condition" />
-                  <CheckBox layoutX="254.0" layoutY="530.0" mnemonicParsing="false" text="Dented" />
-                  <CheckBox layoutX="254.0" layoutY="369.0" mnemonicParsing="false" text="Good Condition" />
-                  <CheckBox layoutX="254.0" layoutY="343.0" mnemonicParsing="false" text="Dented" />
-                  <Button layoutX="549.0" layoutY="780.0" mnemonicParsing="false" text="Submit" />
+                  <CheckBox fx:id="frontdent" layoutX="248.0" layoutY="171.0" mnemonicParsing="false" text="Dented" />
+                  <CheckBox fx:id="frontgood" layoutX="248.0" layoutY="195.0" mnemonicParsing="false" text="Good Condition" />
+                  <CheckBox fx:id="passgood" layoutX="254.0" layoutY="730.0" mnemonicParsing="false" text="Good Condition" />
+                  <CheckBox fx:id="passdent" layoutX="254.0" layoutY="699.0" mnemonicParsing="false" text="Dented" />
+                  <CheckBox fx:id="drivergood" layoutX="254.0" layoutY="557.0" mnemonicParsing="false" text="Good Condition" />
+                  <CheckBox fx:id="driverdent" layoutX="254.0" layoutY="530.0" mnemonicParsing="false" text="Dented" />
+                  <CheckBox fx:id="backgood" layoutX="254.0" layoutY="369.0" mnemonicParsing="false" text="Good Condition" />
+                  <CheckBox fx:id="backdent" layoutX="254.0" layoutY="343.0" mnemonicParsing="false" text="Dented" />
+                  <Button fx:id="confirmbtn" layoutX="549.0" layoutY="780.0" mnemonicParsing="false" onAction="#ToHome" text="Confirm" />
                </children>
             </AnchorPane>
          </center>
