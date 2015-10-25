@@ -5,6 +5,7 @@
  */
 package gsu.ugahacksproject;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,8 +16,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javax.swing.JFileChooser;
 
 /**
  * FXML Controller class
@@ -24,7 +28,26 @@ import javafx.stage.Stage;
  * @author Iwasaki
  */
 public class AddVehicleController implements Initializable {
-
+    
+    final JFileChooser chooser = new JFileChooser();
+    
+    
+    @FXML
+    private TextField fronttext;
+    
+    @FXML
+    private TextField backtext;
+    
+    @FXML
+    private TextField passtext;
+    
+    @FXML
+    private TextField drivertext;
+    
+    
+    @FXML
+    private Button importbtn;
+    
     @FXML
     private Button frontbtn;
     
@@ -47,45 +70,49 @@ public class AddVehicleController implements Initializable {
     @FXML
     private void OpenUpload(ActionEvent event) throws IOException {
         Stage stage; 
-        Parent root;
         if(event.getSource()== frontbtn){
-        stage = new Stage();
-        root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
-        stage.setScene(new Scene(root));
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.initOwner(frontbtn.getScene().getWindow());
-        stage.showAndWait();
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
         }
-        if(event.getSource()== backbtn){
-        stage = new Stage();
-        root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
-        stage.setScene(new Scene(root));
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.initOwner(backbtn.getScene().getWindow());
-        stage.showAndWait();
+
         }
-        if(event.getSource()== driverbtn){
-        stage = new Stage();
-        root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
-        stage.setScene(new Scene(root));
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.initOwner(driverbtn.getScene().getWindow());
-        stage.showAndWait();
+        else if(event.getSource()== backbtn){
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
         }
-        if(event.getSource()== passengerbtn){
-        stage = new Stage();
-        root = FXMLLoader.load(getClass().getResource("/fxml/URL.fxml"));
-        stage.setScene(new Scene(root));
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.initOwner(passengerbtn.getScene().getWindow());
-        stage.showAndWait();
+
         }
-        else{
-        stage = (Stage) uploadbtn.getScene().getWindow();
-        stage.close();
+        else if(event.getSource()== driverbtn){
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+       fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
+        }
+
+        }
+        else if(event.getSource()== passengerbtn){
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
+}
+
         }
         
     }
+
     
     
     
@@ -95,5 +122,9 @@ public class AddVehicleController implements Initializable {
         
 
     }   
+
+    private void openFile(File file) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

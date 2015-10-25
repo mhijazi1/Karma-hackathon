@@ -22,6 +22,7 @@
          </font>
       </Label>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Label layoutX="102.0" layoutY="193.0" prefHeight="20.0" prefWidth="80.0" text="Pin Number:">
          <font>
             <Font size="14.0" />
@@ -82,11 +83,21 @@
       <Button fx:id="backbtn" layoutX="358.0" layoutY="451.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
       <Button fx:id="driverbtn" layoutX="358.0" layoutY="403.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
       <Button fx:id="passengerbtn" layoutX="358.0" layoutY="499.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
+=======
+      <TextField fx:id="fronttext" layoutX="126.0" layoutY="353.0" prefHeight="25.0" prefWidth="216.0" promptText="Front View" />
+      <Button fx:id="frontbtn" layoutX="358.0" layoutY="353.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
+      <TextField fx:id="reartext" layoutX="126.0" layoutY="403.0" prefHeight="25.0" prefWidth="216.0" promptText="Rear View" />
+      <TextField fx:id="drivertext" layoutX="126.0" layoutY="451.0" prefHeight="25.0" prefWidth="216.0" promptText="Driver Side" />
+      <TextField fx:id="passtext" layoutX="127.0" layoutY="499.0" prefHeight="25.0" prefWidth="216.0" promptText="Passenger Side" />
+      <Button fx:id="driverbtn" layoutX="358.0" layoutY="451.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
+      <Button fx:id="rearbtn" layoutX="358.0" layoutY="403.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
+      <Button fx:id="passengerbtn" layoutX="358.0" layoutY="499.0" mnemonicParsing="false" onAction="#OpenUpload" text="Browse" />
+>>>>>>> Iwasaki
       <Hyperlink layoutX="289.0" layoutY="380.0" text="Example" />
       <Hyperlink layoutX="289.0" layoutY="428.0" text="Example" />
       <Hyperlink layoutX="289.0" layoutY="476.0" text="Example" />
       <Hyperlink layoutX="289.0" layoutY="526.0" text="Example" />
-      <Button fx:id="submitbtn" layoutX="170.0" layoutY="571.0" mnemonicParsing="false" onAction="#SubInfo" prefHeight="23.0" prefWidth="203.0" style="-fx-background-color: rgba(48,132,217);" text="Submit Vehicle" textFill="WHITE">
+      <Button fx:id="submitbtn" layoutX="170.0" layoutY="571.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="203.0" style="-fx-background-color: rgba(48,132,217);" text="Submit Vehicle" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
