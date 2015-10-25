@@ -25,7 +25,6 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fx:id="fimage" fitHeight="134.0" fitWidth="186.0" layoutX="34.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true" />
@@ -44,6 +43,10 @@
                   <CheckBox fx:id="backdent" layoutX="254.0" layoutY="343.0" mnemonicParsing="false" text="Dented" />
                   <Button fx:id="confirmbtn" layoutX="549.0" layoutY="780.0" mnemonicParsing="false" onAction="#ToHome" text="Confirm" />
                   <ImageView fx:id="fimage1" fitHeight="134.0" fitWidth="186.0" layoutX="41.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="testImage" fitHeight="134.0" fitWidth="186.0" layoutX="78.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/image/Karma.jpg" />
+                     </image></ImageView>
                </children>
             </AnchorPane>
          </center>
