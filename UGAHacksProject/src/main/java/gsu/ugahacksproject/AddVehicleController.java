@@ -27,46 +27,27 @@ import javax.swing.JFileChooser;
  *
  * @author Iwasaki
  */
-public class AddVehicleController implements Initializable {
-    
+public class AddVehicleController implements Initializable, GlobalValidator {
     final JFileChooser chooser = new JFileChooser();
-    tagg validator = new tagg(System.getProperty("user.dir") + "/src/main/resources/python");
     
     @FXML
     private TextField fronttext;
-    
     @FXML
     private TextField backtext;
-    
     @FXML
     private TextField passtext;
-    
     @FXML
     private TextField drivertext;
-    
-    
-    @FXML
-    private Button importbtn;
-    
     @FXML
     private Button frontbtn;
-    
-    @FXML
-    private Button uploadbtn;
-    
     @FXML
     private Button backbtn;
-    
     @FXML
     private Button driverbtn;
-    
     @FXML
     private Button passengerbtn;
-
     @FXML
     private Button submitbtn;
-    
-    
     @FXML
     private void OpenUpload(ActionEvent event) throws IOException {
         Stage stage; 
@@ -74,7 +55,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        fronttext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
         }
@@ -84,7 +65,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        backtext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
         }
@@ -94,7 +75,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-       fronttext.setText(chooser.getSelectedFile().getPath());
+        drivertext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
         }
@@ -104,13 +85,38 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        passtext.setText(chooser.getSelectedFile().getAbsolutePath());
         } else {
         System.out.println("No Selection ");
-}
+        }
 
         }
         
+    }
+    @FXML
+    private void ToDispute(ActionEvent event) throws IOException {
+        Stage stage; 
+        Parent root;
+         PredictionVariables.frontURL = fronttext.getText();
+         PredictionVariables.backURL = backtext.getText();
+         PredictionVariables.driverURL = drivertext.getText();
+         PredictionVariables.passURL = passtext.getText();
+        
+        PredictionVariables.frontstatus = validator.predict(PredictionVariables.frontURL);
+        PredictionVariables.backstatus= validator.predict( PredictionVariables.backURL);
+        PredictionVariables.driverstatus = validator.predict( PredictionVariables.driverURL);
+        PredictionVariables.passstatus = validator.predict( PredictionVariables.passURL);
+        
+        
+        stage=(Stage) submitbtn.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("/fxml/Dispute.fxml"));
+
+        
+        
+        
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     
