@@ -7,34 +7,45 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="542.0" style="-fx-background-color: rgba(33,33,33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsu.ugahacksproject.AddVehicleController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="542.0" style="-fx-background-color: rgba(33,33,33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsu.ugahacksproject.AddVehicleController">
    <children>
-      <Label layoutX="109.0" layoutY="35.0" prefHeight="47.0" prefWidth="325.0" text="Vehicle Information" textFill="#f8f3f3">
+      <Label layoutX="109.0" layoutY="14.0" prefHeight="47.0" prefWidth="325.0" text="Vehicle Information" textFill="#f8f3f3">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <TextField layoutX="126.0" layoutY="192.0" prefHeight="25.0" prefWidth="216.0" promptText="Front View" />
-      <Button fx:id="frontbtn" layoutX="358.0" layoutY="192.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
-      <TextField layoutX="126.0" layoutY="248.0" prefHeight="25.0" prefWidth="216.0" promptText="Rear View" />
-      <TextField layoutX="126.0" layoutY="302.0" prefHeight="25.0" prefWidth="216.0" promptText="Driver Side" />
-      <TextField layoutX="126.0" layoutY="356.0" prefHeight="25.0" prefWidth="216.0" promptText="Passenger Side" />
-      <Button fx:id="backbtn" layoutX="358.0" layoutY="302.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
-      <Button fx:id="driverbtn" layoutX="358.0" layoutY="248.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
-      <Button fx:id="passengerbtn" layoutX="358.0" layoutY="356.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
-      <Hyperlink layoutX="289.0" layoutY="218.0" text="Example" />
-      <Hyperlink layoutX="289.0" layoutY="273.0" text="Example" />
-      <Hyperlink layoutX="289.0" layoutY="327.0" text="Example" />
-      <Hyperlink layoutX="289.0" layoutY="381.0" text="Example" />
-      <Button layoutX="170.0" layoutY="486.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="203.0" style="-fx-background-color: rgba(48,132,217);" text="Submit Vehicle" textFill="WHITE">
+      <TextField layoutX="126.0" layoutY="353.0" prefHeight="25.0" prefWidth="216.0" promptText="Front View" />
+      <Button fx:id="frontbtn" layoutX="358.0" layoutY="353.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
+      <TextField layoutX="126.0" layoutY="403.0" prefHeight="25.0" prefWidth="216.0" promptText="Rear View" />
+      <TextField layoutX="126.0" layoutY="451.0" prefHeight="25.0" prefWidth="216.0" promptText="Driver Side" />
+      <TextField layoutX="127.0" layoutY="499.0" prefHeight="25.0" prefWidth="216.0" promptText="Passenger Side" />
+      <Button fx:id="backbtn" layoutX="358.0" layoutY="451.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
+      <Button fx:id="driverbtn" layoutX="358.0" layoutY="403.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
+      <Button fx:id="passengerbtn" layoutX="358.0" layoutY="499.0" mnemonicParsing="false" onAction="#OpenUpload" text="Upload" />
+      <Hyperlink layoutX="289.0" layoutY="380.0" text="Example" />
+      <Hyperlink layoutX="289.0" layoutY="428.0" text="Example" />
+      <Hyperlink layoutX="289.0" layoutY="476.0" text="Example" />
+      <Hyperlink layoutX="289.0" layoutY="526.0" text="Example" />
+      <Button fx:id="submitbtn" layoutX="170.0" layoutY="571.0" mnemonicParsing="false" onAction="#SubInfo" prefHeight="23.0" prefWidth="203.0" style="-fx-background-color: rgba(48,132,217);" text="Submit Vehicle" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Text fill="#ebe9e9" layoutX="126.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos:" wrappingWidth="120.13671875">
+      <Text fill="#ebe9e9" layoutX="110.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos:" wrappingWidth="120.13671875">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Detail:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField layoutX="125.0" layoutY="109.0" prefHeight="25.0" prefWidth="219.0" promptText="Pin Number" />
+      <TextField layoutX="125.0" layoutY="144.0" prefHeight="25.0" prefWidth="219.0" promptText="Company" />
+      <TextField layoutX="125.0" layoutY="177.0" prefHeight="25.0" prefWidth="219.0" promptText="Model" />
+      <TextField layoutX="125.0" layoutY="209.0" prefHeight="25.0" prefWidth="219.0" promptText="Year" />
+      <TextField layoutX="126.0" layoutY="274.0" prefHeight="25.0" prefWidth="219.0" promptText="Region" />
+      <TextField layoutX="125.0" layoutY="242.0" prefHeight="25.0" prefWidth="219.0" promptText="Region" />
    </children>
 </AnchorPane>
