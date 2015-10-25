@@ -23,24 +23,27 @@ public class tagg {
 
         Scanner sc = new Scanner(System.in);
 
-        File inFile = new File("./test.txt");
-        String fileContent = "";
+        // File inFile = new File("http://www.clyderepaircentre.com/images/cardentsrepaired.jpg");
+        // String fileContent = "";
 
-        try {
+        // try {
 
-            Scanner fileInput = new Scanner(inFile);
-            while (fileInput.hasNext()) {
-                fileContent += fileInput.nextLine() + '\n';
-            } 
-        }catch (Exception e){
-                    System.out.println("Error");
-                    }
+        //     Scanner fileInput = new Scanner(inFile);
+        //     while (fileInput.hasNext()) {
+        //         fileContent += fileInput.nextLine() + '\n';
+        //     }    
+        // }catch (Exception e){
+        //     try
+        //     System.out.println("Error");
+        //     e.printStackTrace();
+        // }
         
         
         try {
-            System.out.println(fileContent);
+//            System.out.println(fileContent);
             Runtime rt = Runtime.getRuntime();
-            Process p = rt.exec("python predict.py" + fileContent);
+            String fileContent = "http://www.clyderepaircentre.com/images/cardentsrepaired.jpg";
+            Process p = rt.exec("python ../predict.py" + fileContent);
             p.waitFor();
             InputStream stderr = p.getInputStream();
             InputStreamReader in = new InputStreamReader(stderr);
