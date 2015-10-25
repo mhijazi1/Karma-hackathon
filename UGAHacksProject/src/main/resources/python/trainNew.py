@@ -3,7 +3,8 @@ from clarifai_basic import ClarifaiCustomModel
 import sys
 
 if len(sys.argv) < 4:
-    print("syntax: python .\predict.py [URL|File] [Result State] [Good|Bad] [if Bad: expected State")
+    print(
+        "syntax: python .\predict.py [URL|File] [Result State] [Good|Bad] [if Bad: expected State")
     exit()
 
 # assumes environment variables are set.
@@ -23,9 +24,11 @@ if predictResult == "good":
             clarifai_api.negative(url, s)
     clarifai_api.train(state)
 if predictResult == "bad":
-    expectedState=sys.argv[4].lower()
+    expectedState = sys.argv[4].lower()
     clarifai_api.positive(url, expectedState)
     for s in states:
         if s != expectedState:
             clarifai_api.negative(url, s)
     clarifai_api.train(expectedState)
+
+
