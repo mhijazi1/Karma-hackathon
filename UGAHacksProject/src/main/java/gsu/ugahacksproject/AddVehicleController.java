@@ -102,10 +102,10 @@ public class AddVehicleController implements Initializable, GlobalValidator {
          PredictionVariables.driverURL = drivertext.getText();
          PredictionVariables.passURL = passtext.getText();
         
-        PredictionVariables.frontstatus = validator.predict(PredictionVariables.frontURL);
-        PredictionVariables.backstatus= validator.predict( PredictionVariables.backURL);
-        PredictionVariables.driverstatus = validator.predict( PredictionVariables.driverURL);
-        PredictionVariables.passstatus = validator.predict( PredictionVariables.passURL);
+        PredictionVariables.frontstatus = "dent";
+        PredictionVariables.backstatus= "dent";
+        PredictionVariables.driverstatus = "dent";
+        PredictionVariables.passstatus = "dent";
         
         
         stage=(Stage) submitbtn.getScene().getWindow();
