@@ -34,7 +34,7 @@ public class tagg {
             BufferedReader error = new BufferedReader(new InputStreamReader(p.getErrorStream()));
             String line = null;
             while ((line = error.readLine()) != null) {
-                System.out.println("Python says: " + line);
+                System.out.println("Python error: " + line);
             }
             
             BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -67,22 +67,22 @@ public class tagg {
             BufferedReader error = new BufferedReader(new InputStreamReader(p.getErrorStream()));
             String line = null;
             while ((line = error.readLine()) != null) {
-                System.out.println("Python says: " + line);
+                System.out.println("Python error: " + line);
             }
             int exitVal = p.waitFor();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    public void dispute(String filePath, String expectedResult, String actualResult){
+    public void dispute(String filePath, String actualResult, String expectedResult){
         try {
 //            System.out.println(fileContent);
            // Runtime rt = Runtime.getRuntime();
-            Process p = Runtime.getRuntime().exec("python " + commandPath + "/trainNew.py " + filePath + " " + expectedResult + " bad " + actualResult);
+            Process p = Runtime.getRuntime().exec("python " + commandPath + "/trainNew.py " + filePath + " " + actualResult + " bad " + expectedResult);
             BufferedReader error = new BufferedReader(new InputStreamReader(p.getErrorStream()));
             String line = null;
             while ((line = error.readLine()) != null) {
-                System.out.println("Python says: " + line);
+                System.out.println("Python error: " + line);
             }
             int exitVal = p.waitFor();
         } catch (Exception e) {
