@@ -43,16 +43,9 @@ public class AddVehicleController implements Initializable {
     
     @FXML
     private TextField drivertext;
-    
-    
-    @FXML
-    private Button importbtn;
-    
+
     @FXML
     private Button frontbtn;
-    
-    @FXML
-    private Button uploadbtn;
     
     @FXML
     private Button backbtn;
@@ -84,7 +77,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        backtext.setText(chooser.getSelectedFile().getPath());
         } else {
         System.out.println("No Selection ");
         }
@@ -94,7 +87,7 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-       fronttext.setText(chooser.getSelectedFile().getPath());
+        passtext.setText(chooser.getSelectedFile().getPath());
         } else {
         System.out.println("No Selection ");
         }
@@ -104,13 +97,25 @@ public class AddVehicleController implements Initializable {
         chooser.setAcceptAllFileFilterUsed(false);
 
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-        fronttext.setText(chooser.getSelectedFile().getPath());
+        drivertext.setText(chooser.getSelectedFile().getPath());
         } else {
         System.out.println("No Selection ");
-}
+        }
 
         }
         
+    }
+    @FXML
+    private void GoToDispute(ActionEvent event) throws IOException {
+        Stage stage; 
+        Parent root;
+
+        stage=(Stage) submitbtn.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("/fxml/Dispute.fxml"));
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     
@@ -119,12 +124,8 @@ public class AddVehicleController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
 
     }   
 
-    private void openFile(File file) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }

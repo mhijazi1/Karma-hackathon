@@ -26,7 +26,7 @@
       <Hyperlink layoutX="289.0" layoutY="428.0" text="Example" />
       <Hyperlink layoutX="289.0" layoutY="476.0" text="Example" />
       <Hyperlink layoutX="289.0" layoutY="526.0" text="Example" />
-      <Button fx:id="submitbtn" layoutX="170.0" layoutY="571.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="203.0" style="-fx-background-color: rgba(48,132,217);" text="Submit Vehicle" textFill="WHITE">
+      <Button fx:id="submitbtn" layoutX="170.0" layoutY="571.0" mnemonicParsing="false" onAction="#GoToDispute" prefHeight="23.0" prefWidth="203.0" style="-fx-background-color: rgba(48,132,217);" text="Submit Vehicle" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
