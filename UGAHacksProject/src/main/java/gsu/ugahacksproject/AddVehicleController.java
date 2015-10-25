@@ -30,7 +30,7 @@ import javax.swing.JFileChooser;
 public class AddVehicleController implements Initializable {
     
     final JFileChooser chooser = new JFileChooser();
-    
+    tagg validator = new tagg(System.getProperty("user.dir") + "/src/main/resources/python");
     
     @FXML
     private TextField fronttext;
