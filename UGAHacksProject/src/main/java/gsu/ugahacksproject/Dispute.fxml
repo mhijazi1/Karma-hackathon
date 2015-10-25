@@ -25,9 +25,6 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true" />
                   <Label layoutX="254.0" layoutY="42.0" text="Verification Page">
                      <font>
                         <Font size="28.0" />
@@ -41,12 +38,31 @@
                   <CheckBox fx:id="driverdent" layoutX="254.0" layoutY="530.0" mnemonicParsing="false" text="Dented" />
                   <CheckBox fx:id="backgood" layoutX="254.0" layoutY="369.0" mnemonicParsing="false" text="Good Condition" />
                   <CheckBox fx:id="backdent" layoutX="254.0" layoutY="343.0" mnemonicParsing="false" text="Dented" />
-                  <Button fx:id="confirmbtn" layoutX="549.0" layoutY="780.0" mnemonicParsing="false" onAction="#ToHome" text="Confirm" />
-                  <ImageView fx:id="fimage1" fitHeight="134.0" fitWidth="186.0" layoutX="41.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fx:id="testImage" fitHeight="134.0" fitWidth="186.0" layoutX="78.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../resources/image/Karma.jpg" />
-                     </image></ImageView>
+                  <Button fx:id="confirmbtn" layoutX="441.0" layoutY="701.0" mnemonicParsing="false" onAction="#ToHome" prefHeight="39.0" prefWidth="108.0" text="Confirm">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Label layoutX="94.0" layoutY="170.0" prefHeight="46.0" prefWidth="81.0" text="Front">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="348.0" prefHeight="40.0" prefWidth="72.0" text="Back">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="530.0" prefHeight="45.0" prefWidth="97.0" text="Driver">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="697.0" prefHeight="47.0" prefWidth="74.0" text="Back">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="251.0" fitWidth="575.0" layoutX="73.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </AnchorPane>
          </center>
