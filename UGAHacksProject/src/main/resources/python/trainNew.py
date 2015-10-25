@@ -12,21 +12,21 @@ clarifai_api = ClarifaiCustomModel(
     "Qu6z2uKlfDgqa7Atn1HlOBa3pakRBQHflQicLNr_",
     "8WgQ8D4Dp9IW1JilxEfjXjgg1geq1zpaeT3P7Rk3")
 
-possibleStates["dent", "perfect"]
+possibleStates=["dent", "perfect"]
 url = sys.argv[1]
 state = sys.argv[2].lower
 predictResult = sys.argv[3].lower()
 
 if predictResult == "good":
     clarifai_api.positive(url, state)
-    for s in states:
+    for s in possibleStates:
         if s != state:
             clarifai_api.negative(url, s)
     clarifai_api.train(state)
 if predictResult == "bad":
     expectedState = sys.argv[4].lower()
     clarifai_api.positive(url, expectedState)
-    for s in states:
+    for s in possibleStates:
         if s != expectedState:
             clarifai_api.negative(url, s)
     clarifai_api.train(expectedState)
