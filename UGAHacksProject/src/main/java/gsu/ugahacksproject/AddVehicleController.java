@@ -20,6 +20,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javax.swing.JFileChooser;
 
 /**
  * FXML Controller class
@@ -28,7 +29,7 @@ import javafx.stage.Stage;
  */
 public class AddVehicleController implements Initializable {
     
-    final FileChooser fileChooser = new FileChooser();
+    final JFileChooser chooser = new JFileChooser();
     
     
     @FXML
@@ -69,51 +70,49 @@ public class AddVehicleController implements Initializable {
     @FXML
     private void OpenUpload(ActionEvent event) throws IOException {
         Stage stage; 
-        Parent root;
         if(event.getSource()== frontbtn){
-        stage=(Stage) frontbtn.getScene().getWindow();
-        File file = fileChooser.showOpenDialog(stage);
-                    if (file != null) {
-                        openFile(file);
-                    }
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
+        }
 
         }
         else if(event.getSource()== backbtn){
-        stage=(Stage) backbtn.getScene().getWindow();
-        File file = fileChooser.showOpenDialog(stage);
-                    if (file != null) {
-                        openFile(file);
-                    }
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
+        }
 
         }
         else if(event.getSource()== driverbtn){
-        stage=(Stage) driverbtn.getScene().getWindow();
-        File file = fileChooser.showOpenDialog(stage);
-                    if (file != null) {
-                        openFile(file);
-                    }
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+       fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
+        }
 
         }
         else if(event.getSource()== passengerbtn){
-        stage=(Stage) passengerbtn.getScene().getWindow();
-        File file = fileChooser.showOpenDialog(stage);
-                    if (file != null) {
-                        openFile(file);
-                    }
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        fronttext.setText(chooser.getSelectedFile().getPath());
+        } else {
+        System.out.println("No Selection ");
+}
 
         }
         
     }
-    @FXML
-    private void GetFile(ActionEvent event) throws IOException {
-        Stage stage;
-        stage=(Stage) importbtn.getScene().getWindow();
-        File file = fileChooser.showOpenDialog(stage);
-                    if (file != null) {
-                        openFile(file);
-                    }
-        
-    }
+
     
     
     
