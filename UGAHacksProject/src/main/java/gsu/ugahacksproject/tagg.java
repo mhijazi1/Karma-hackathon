@@ -34,7 +34,7 @@ public class tagg {
             BufferedReader error = new BufferedReader(new InputStreamReader(p.getErrorStream()));
             String line = null;
             while ((line = error.readLine()) != null) {
-                System.out.println("Python says: " + line);
+                System.out.println("Python error: " + line);
             }
             
             BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -67,7 +67,7 @@ public class tagg {
             BufferedReader error = new BufferedReader(new InputStreamReader(p.getErrorStream()));
             String line = null;
             while ((line = error.readLine()) != null) {
-                System.out.println("Python says: " + line);
+                System.out.println("Python error: " + line);
             }
             int exitVal = p.waitFor();
         } catch (Exception e) {
@@ -82,7 +82,7 @@ public class tagg {
             BufferedReader error = new BufferedReader(new InputStreamReader(p.getErrorStream()));
             String line = null;
             while ((line = error.readLine()) != null) {
-                System.out.println("Python says: " + line);
+                System.out.println("Python error: " + line);
             }
             int exitVal = p.waitFor();
         } catch (Exception e) {
