@@ -39,7 +39,9 @@ public class AddVehicleController implements Initializable {
     
     @FXML
     private Button passengerbtn;
-    
+
+    @FXML
+    private Button submitbtn;
     
     
     @FXML
